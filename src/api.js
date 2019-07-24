@@ -3,11 +3,11 @@ import httpAdapter from 'axios/lib/adapters/http'
 
 const instance = axios.create({
   baseURL: 'https://api.github.com',
-  adapter: httpAdapter,
+  adapter: httpAdapter
 })
 
 export default {
-  searchUser(username) {
+  searchUser (username) {
     return instance
       .get(`/users/${username}`)
       .then(result => result.data)
