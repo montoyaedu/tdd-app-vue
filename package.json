@@ -31,8 +31,14 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "flush-promises": "^1.0.2",
+    "jest-sonar-reporter": "^2.0.0",
     "jest-transform-stub": "^2.0.0",
     "nock": "^10.0.6",
     "vue-template-compiler": "^2.6.10"
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
   }
 }
