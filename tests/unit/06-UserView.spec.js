@@ -6,7 +6,6 @@ import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
 import initialState from '@/store/state'
 import actions from '@/store/actions'
-import userFixture from './fixtures/user'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)

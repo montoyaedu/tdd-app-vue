@@ -3,7 +3,6 @@ import Vuex from 'vuex'
 import UserView from '@/views/UserView'
 import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
-import initialState from '@/store/state'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
@@ -11,11 +10,11 @@ localVue.use(Vuex)
 describe('UserView', () => {
   let state
   
-  const build = () => {
-    const wrapper = shallowMount(UserView, {
-      localVue,
-      store: new Vuex.Store({ state })
-    })
+const build = () => {
+  const wrapper = shallowMount(UserView, {
+    localVue,
+    store: new Vuex.Store({ state })
+  })
 
     return {
       wrapper,
@@ -27,6 +26,7 @@ describe('UserView', () => {
   it('renders the component', () => {
     // arrange
     const { wrapper } = build()
+    
     // assert
     expect(wrapper.html()).toMatchSnapshot()
   })
