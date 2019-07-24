@@ -35,10 +35,5 @@
     "jest-transform-stub": "^2.0.0",
     "nock": "^10.0.6",
     "vue-template-compiler": "^2.6.10"
-  },
-  "jestSonar": {
-    "reportPath": "coverage",
-    "reportFile": "test-reporter.xml",
-    "indent": 4
   }
 }
