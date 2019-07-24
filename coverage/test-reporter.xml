@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/UserView.spec.js">
+        <testCase name="UserView works" duration="7"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/VUserSearchFrom.spec.js">
+        <testCase name="VUserSearchForm renders the component" duration="49"/>
+        <testCase name="VUserSearchForm renders main child components" duration="21"/>
+        <testCase name="VUserSearchForm calls &quot;submitted&quot; event when submitting form" duration="16"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/03-UserView.spec.js">
+        <testCase name="UserView renders the component" duration="53"/>
+        <testCase name="UserView renders main child components" duration="11"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/04-UserView.spec.js">
+        <testCase name="UserView passes a binded user prop to user profile component" duration="44"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/05-UserView.spec.js">
+        <testCase name="UserView passes a binded user prop to user profile component" duration="59"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/01-UserView.spec.js">
+        <testCase name="UserView renders the component" duration="62"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/02-UserView.spec.js">
+        <testCase name="UserView renders the component" duration="63"/>
+        <testCase name="UserView renders main child components" duration="10"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/06-UserView.spec.js">
+        <testCase name="UserView searches for a user when received &quot;submitted&quot;" duration="32"/>
+    </file>
+    <file path="/Users/montoyaedu/tdd-app/tests/unit/VUserProfile.spec.js">
+        <testCase name="VUserProfile renders the component" duration="11"/>
+        <testCase name="VUserProfile renders main components" duration="10"/>
+    </file>
+</testExecutions>

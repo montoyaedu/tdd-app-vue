@@ -37,7 +37,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "jestSonar": {
-    "reportPath": "reports",
+    "reportPath": "coverage",
     "reportFile": "test-reporter.xml",
     "indent": 4
   }
