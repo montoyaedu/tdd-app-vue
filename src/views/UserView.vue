@@ -1,18 +1,19 @@
-<template>
-<div class="pippo">
-  <VUserSearchForm/>
-  <VUserProfile/>
-</div>
-</template>
-
 <script>
-import VUserProfile from '@/components/VUserProfile'
 import VUserSearchForm from '@/components/VUserSearchForm'
+import VUserProfile from '@/components/VUserProfile'
 
 export default {
+  name: 'UserView',
   components: {
     VUserSearchForm,
-    VUserProfile
+    VUserProfile,
   }
 }
 </script>
+
+<template>
+  <div>
+    <VUserSearchForm />
+    <VUserProfile />
+  </div>
+</template>
