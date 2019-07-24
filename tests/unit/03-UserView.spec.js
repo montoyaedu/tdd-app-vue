@@ -1,11 +1,21 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
+import Vuex from 'vuex'
 import UserView from '@/views/UserView'
 import VUserSearchForm from '@/components/VUserSearchForm'
 import VUserProfile from '@/components/VUserProfile'
+import initialState from '@/store/state'
+
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 describe('UserView', () => {
+  let state
+  
   const build = () => {
-    const wrapper = shallowMount(UserView)
+    const wrapper = shallowMount(UserView, {
+      localVue,
+      store: new Vuex.Store({ state })
+    })
 
     return {
       wrapper,
@@ -13,7 +23,7 @@ describe('UserView', () => {
       userProfile: () => wrapper.find(VUserProfile)
     }
   }
-
+  
   it('renders the component', () => {
     // arrange
     const { wrapper } = build()
